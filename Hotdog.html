@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Dog's "El Bicho"</title>
+
+    <!-- Googleapi-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom css file link -->
+    <link rel="stylesheet" href="css/Hotdog.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.jpg" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#products">Productos</a>
+        <a href="#review">Opiniones</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Busca aquí...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <nav class="navbar">
+        <a href="./components/login/login.html">Iniciar sesión</a>
+    </nav>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-1.png" alt="">
+            <div class="content">
+                <h3>Hot dog "Monchoso"</h3>
+                <div class="price">$60 Mxn/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>Hamburguesa "Tapa Arterias"</h3>
+                <div class="price">$125 Mxn/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>Batido d Fresa</h3>
+                <div class="price">$35 Mxn/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-4.jpg" alt="">
+            <div class="content">
+                <h3>Pastel d chocolate "MilkyWay"</h3>
+                <div class="price">$65 Mxn/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-5.jpg" alt="">
+            <div class="content">
+                <h3>Refresco "Coca Cola"</h3>
+                <div class="price">$18 Mxn/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">Comprar ahora</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Unos buenos Hot dog's y Hamburguesas "Del Bicho"</h3>
+        <p>No pierdas más tu tiempo y ven con nosotros a degustar la gran especialidad 
+            de nuestro menú tanto que ni te quedras ir. Igual podras solicitarla a domicilio 
+            si asi es tu preferencia asi que no lo pienses más y di SIUUUUUUU un Hot Dog.</p>
+        <a href="#contact" class="btn">Pide los tuyo ahora mismo</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> Sobre </span> Nosotros </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>¿Qué hace que nuestra comida sea tan unica y especial?</h3>
+            <p> Bueno nosotros desde un comienzo soliamos degustar en varios 
+                puestos nocturno o restaurantes hot dog's y hamburguesas pero nunca 
+                podiamos decir aqui es donde realmente estan espectucular y fua asi 
+                que nos aventamos a poder innovar esos sabores para que realmente deban de saber por lo que son. </p>
+
+            <p> Asi que nos esforzamos cada dia en la preparación de la carne 
+                o de los diferentes tipos de quesos o tambien el tocino que es 
+                muy fundamental la forma del cocido ya que no lo queremos blando 
+                si no crujiente pero tampoco quemado y esa es unas de las tantas 
+                razones por que quisimos dar a conocer nuestro emprendimiento y 
+                hacerles desgustar como realmente nos gustaria que supieran. </p>
+
+            <a href="#" class="btn"> Leer más...</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> Nuestro <span> Menú </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/menu-1.jpg" alt="">
+            <h3>Hamburguesa "Triton"</h3>
+            <div class="price">$125.00 Mxn <span>$145.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-2.jpg" alt="">
+            <h3>Hotdog "De Chili"</h3>
+            <div class="price">$75.00 Mxn <span>$90.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-3.jpg" alt="">
+            <h3>Hotdog "Monchoso"</h3>
+            <div class="price">$60.00 Mxn <span>$80.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-4.jpg" alt="">
+            <h3>Refresco "Coca Cola"</h3>
+            <div class="price">$18.00 Mxn <span>$20.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-5.jpg" alt="">
+            <h3>Refresco "Pepsi"</h3>
+            <div class="price">$15.00 Mxn <span>$18.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-6.jpg" alt="">
+            <h3>Batido "Fresa"</h3>
+            <div class="price">$35.00 Mxn <span>$45.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-7.jpg" alt="">
+            <h3>Batido "Chocolate"</h3>
+            <div class="price">$35.00 Mxn <span>$45.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-8.jpg" alt="">
+            <h3>Pastel de chocolate "MilkyWay"</h3>
+            <div class="price">$65.00 Mxn <span>$75.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-9.jpg" alt="">
+            <h3>Frappuccino</h3>
+            <div class="price">$75.00 Mxn <span>$95.00 Mxn</span></div>
+            <a href="#" class="btn">Añadir a carrito</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- products section starts -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Nuestros <span>productos</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Hamburguesa "Goliath"</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$135.00 Mxn <span>$165.00 Mxn</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Hotdog "Yeti"</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$120.00 Mxn <span>$135.00 Mxn</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Papas Fritas "Naturales"</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$45.00 Mxn <span>$65.00 Mxn</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> Opinión de los <span>clientes</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p> Muy bueno esta todo en especial las variadas tipo de hamburguesas ya que siempre cuidan mucho que no se seque 
+                la carne y que tambien es preparada por ellos y no es comprada tambien muy rico las malteadas y mas cuando uno 
+                chopea sus papas fritas caseras. </p>
+            <img src="images/pic-1.png" class="user" alt="">
+            <h3> Javier "El cholo" </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p> Muy buena la Hamburguesa "Goliath" es uno de las principales entradas por las cuales se han 
+                caracterizado y la verdad aprovechan mucho los sabores de los quesos que fue lo que me gusto
+                cuando lo derritieron y las 3 carnes de 200 gramos muy jugosas claro y no tiene que faltar una Coca cola.
+            </p>
+            <img src="images/pic-2.png" class="user" alt="">
+            <h3> Checo "Bebe" </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p> Realmente excepcionante todos los tipos de Hotdog uno de los tantos que probe fue el de "Chili" y realmentre
+                es otra cosa el pan es casero las salchichas ellos mismo la preparan y tambien sus papas fritas y mas cuando
+                uno las sumerge en la Malteada de fresa que considero que fue la más rica si se pudiera dar 10 estrellas las daria.
+            </p>
+            <img src="images/pic-3.png" class="user" alt="">
+            <h3> Jonathan "El magnífico" </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> CONTÁCTE </span> NOS </h1>
+
+    <div class="row">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3843932.6960380124!2d-96.1447432!3d19.804357899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1653407201302!5m2!1ses!2smx" 
+        width="1170" height="550" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="" id="formulario"  >
+            <h3>PONERSE EN CONTACTO</h3>
+
+            <!--Grupo: Nombre-->
+            <div class="inputBox" id="grupo__nombre">
+                <span class="fas fa-user"></span>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Luis Eduardo Amador" >
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre tiene que ser un maximo de 40 dígitos y solo puede contener letras y espacios.</p>
+            </div>
+            <!--Grupo: Correo-->
+            <div class="inputBox"  id="grupo__correo">
+                <span class="fas fa-envelope"></span>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ejemplo@ejemplo.com" >
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+            <!--Grupo: Telefono-->
+            <div class="inputBox" id="grupo__telefono">
+                <span class="fas fa-phone"></span>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="2711349823" >
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+            </div>
+
+            
+
+            <!--Mensaje de error al no llenar los campos-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+            <!--Boton de enviar--> 
+           <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="btn">Contacta ahora</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div> 
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/Hot-Dog-El-Bicho-112152681515549" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/LuisMar87798594" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/hotdog.2022/" class="fab fa-instagram"></a>
+    </div>
+
+    <div class="credit"> © 2022 | Creado <span> Ing. Jonathan S. Ramirez Real </span> | Todos los derechos reservados </div>
+
+</section>
+
+<!-- footer section ends -->
+
+    <!-- Custom JavaScript Hotdog file link -->
+    <script src="js/Hotdog.js"></script>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
