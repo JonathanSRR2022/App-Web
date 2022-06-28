@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: "Roboto", sans-serif;
+  }
+  
+  section{
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(45deg,#13131a,#d3ad7f,#13131a,#d3ad7f);
+      background-size: 400% 400%;
+      position: relative;
+      animation: cambiar 10s ease-in-out infinite;
+  }
+  
+  @keyframes cambiar{
+      0%{background-position: 0 50%;}
+      50%{background-position: 100% 50%;}
+      100%{background-position: 0 50%;}
+  }
+  
+  .container{
+      width: 600px;
+      position: relative;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+  
+  .logo_img{
+      width: 250px;
+  }
+  
+  .form{
+      padding: 10px;
+  }
+  
+  .form__usuario,
+  .form__clave{
+      width: 100%;
+      margin-bottom: 40px;
+      position: relative;
+  }
+  
+  .usuario, .clave{
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      border-bottom: solid #222 2px;
+  }
+  
+  .ver_clave{
+      position: absolute;
+      right: 10px;
+      bottom: 30px;
+      cursor: pointer;
+      font-size: 20px;
+  }
+  
+  h1{
+      text-align: center;
+      top: 60%;
+      padding: 30px;
+      color: white;
+      font-size: 4rem;
+  }
+  
+  /* .boton{
+      background: #d3ad7f;
+      border-radius: 50px;
+      padding: 15px 25px;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .form__boton{
+      display: flex;
+      justify-content: flex-start;
+  }
+  
+  .boton:hover{
+      background: #222;
+  } */
+  
+  .btn-neon{
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      color: black;
+      letter-spacing: 4px;
+      text-decoration: none;
+      font-size: 24px;
+      overflow: hidden;
+      transition: 0.2s;
+  }
+  .btn-neon:hover{
+      background: #d3ad7f;
+      box-shadow: 0 0 10px #d3ad7f, 0 0 40px #d3ad7f, 0 0 80px #d3ad7f;
+      transition-delay: 1s;
+   }
+  .btn-neon span{
+      position: absolute;
+      display: block;
+  }
+  #span1{
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent,#d3ad7f);
+   }
+   .btn-neon:hover #span1{
+      left: 100%;
+      transition: 1s;
+  }
+   #span3{
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent,#d3ad7f);
+  }
+   .btn-neon:hover #span3{
+      right: 100%;
+      transition: 1s;
+      transition-delay: 0.5s;
+  }
+  #span2{
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg,transparent,#d3ad7f);
+  }
+  .btn-neon:hover #span2{
+      top: 100%;
+      transition: 1s;
+      transition-delay: 0.25s;
+  }
+  #span4{
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg,transparent,#d3ad7f);
+  }
+  .btn-neon:hover #span4{
+      bottom: 100%;
+      transition: 1s;
+      transition-delay: 0.75s;
+  }

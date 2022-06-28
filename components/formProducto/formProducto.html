@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Home page</title>
+
+    <!--Custom Css file link-->
+    <link rel="stylesheet" href="../../components/formProducto/formProducto.css">
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--File Bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+   </head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bx-store icon'></i>
+            <div class="logo_name">Hotdog Gestor</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+              <i class='bx bx-search'></i>
+              <input type="text" placeholder="Buscar...">
+              <span class="tooltip">Buscar</span>
+            </li>
+            <li>
+                <a href="#">
+                  <i class='bx bx-grid-alt'></i>
+                  <span class="links_name">Inicio</span>
+                </a>
+                 <span class="tooltip">Inicio</span>
+              </li>
+            <li>
+              <a href="../formCliente/formCliente.html">
+                <i class='bx bx-user'></i>
+                <span class="links_name">Clientes</span>
+              </a>
+              <span class="tooltip">Clientes</span>
+            </li>
+            <li>
+              <a href="../formProducto/formProducto.html">
+                <i class='bx bx-cart-alt' ></i>
+                <span class="links_name">Productos</span>
+              </a>
+              <span class="tooltip">Productos</span>
+            </li>
+         <li class="profile">
+             <div class="profile-details">
+               <img src="../../images/profile.jpg" alt="profileImg">
+               <div class="name_job">
+                 <div class="name">Jonathan S. R. R.</div>
+                 <div class="job">Administrador</div>
+               </div>
+             </div>
+                <a href="../login/login.html">
+                    <i class='bx bx-log-out' id="log_out" ></i>
+                </a>
+         </li>
+        </ul>
+      </div>
+
+    <!-- CONTENIDO -->
+    <section class="home-section">
+        <div class="text">Productos</div>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+          Agregar producto
+        </button>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Tamaño</th>
+              <th scope="col">Imagen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+    
+      </section>
+    
+      <!-- CONTENIDO -->
+    
+      <!-- MODAL -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Agregar producto</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Descripción</label>
+                  <input type="text" class="form-control" id="description" required>
+                </div>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Precio</label>
+                  <input type="text" class="form-control" id="price" required>
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Tamaño</label>
+                  <input type="email" class="form-control" id="size" required>
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Imagen</label>
+                  <input type="file" class="form-control" id="image" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="../../components/formProducto/formProducto.js"></script>
+
+</body>
+</html>

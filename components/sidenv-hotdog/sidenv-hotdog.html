@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Home page</title>
+
+    <!--Custom Css file link-->
+    <link rel="stylesheet" href="../../components/side-navbar/side-navbar.css">
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+   </head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-store icon'></i>
+        <div class="logo_name">Hotdog Gestor</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+        <li>
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Buscar...">
+          <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+            <a href="#">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Inicio</span>
+            </a>
+             <span class="tooltip">Inicio</span>
+          </li>
+        <li>
+          <a href="../formCliente/formCliente.html">
+            <i class='bx bx-user'></i>
+            <span class="links_name">Clientes</span>
+          </a>
+          <span class="tooltip">Clientes</span>
+        </li>
+        <li>
+          <a href="../formProducto/formProducto.html">
+            <i class='bx bx-cart-alt' ></i>
+            <span class="links_name">Productos</span>
+          </a>
+          <span class="tooltip">Productos</span>
+        </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="../../images/profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Jonathan S. R. R.</div>
+             <div class="job">Administrador</div>
+           </div>
+         </div>
+            <a href="#">
+                <i class='bx bx-log-out' id="log_out" ></i>
+            </a>
+     </li>
+    </ul>
+  </div>
+
+  <script src="../../components/side-navbar/side-navbar.js"></script>
+
+</body>
+</html>
